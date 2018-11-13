@@ -1,3 +1,6 @@
+#ifndef A_FILE_HEADER_INC
+#define A_FILE_HEADER_INC
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -24,3 +27,5 @@ void setbkcolor(unsigned char, unsigned char, unsigned char);
 void dot(int, int);
 void line(int, int, int, int);
 void dot(int, int);
+
+#endif
