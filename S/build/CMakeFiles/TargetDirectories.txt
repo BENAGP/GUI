@@ -1,0 +1,3 @@
+/home/cymfghj/GUI/GUI/S/build/CMakeFiles/edit_cache.dir
+/home/cymfghj/GUI/GUI/S/build/CMakeFiles/rebuild_cache.dir
+/home/cymfghj/GUI/GUI/S/build/CMakeFiles/S.dir

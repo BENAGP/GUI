@@ -1,0 +1,1 @@
+/usr/bin/cc     CMakeFiles/S.dir/src/main.c.o CMakeFiles/S.dir/src/S.c.o  -o S -rdynamic -lm 
