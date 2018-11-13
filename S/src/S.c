@@ -25,7 +25,7 @@ void init_set()
 	int screensize = 0;
 	
 	fd = open("/dev/fb0", O_RDWR);
-	ioctl(fd, FRIOGET_VSCREENINFO, &vinfo);
+	ioctl(fd, FBIOGET_VSCREENINFO, &vinfo);
 	printf("Initialzing screen parameters:\n");
 	printf("	bits_per_pixel:%d\n",vinfo.bits_per_pixel);
 	printf("	xres:%d\n",vinfo.xres);
@@ -40,7 +40,7 @@ void init_set()
 void clear()
 {
 	printf("Clearing screen!\n");
-	bzero(addr, vinfo.xres * vinfo.yres * vinfo.bit_per_pixel / 8);
+	bzero(addr, vinfo.xres * vinfo.yres * vinfo.bits_per_pixel / 8);
 }
 
 void setcolor(unsigned char Red, unsigned char Green, unsigned char Blue)

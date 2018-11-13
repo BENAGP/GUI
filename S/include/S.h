@@ -20,6 +20,7 @@ typedef unsigned short INT16;
 void init_set();
 void clear();
 void setcolor(unsigned char, unsigned char, unsigned char);
+void setbkcolor(unsigned char, unsigned char, unsigned char);
 void dot(int, int);
 void line(int, int, int, int);
 void dot(int, int);
