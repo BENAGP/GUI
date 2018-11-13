@@ -92,9 +92,29 @@ void line(int x1, int y1, int x2, int y2)
 					for(i = y1; i <= y2; i++)
 						dot(x1, i);
 				} else if(abs(x2 - x1) >= abs(y2 - y1)){
-					if(x1 >		
-				}
-			}
+					if(x1 >	x2){
+						i = x1;
+						x1 = x2;
+						x2 = i;
+						i = y1;
+						y1 = y2;
+						y2 = i;
+					}
+                    for(i = x1; i <= x2; i += 2)
+                        dot(i, (y1 + (i - x1) * k));
+                } else{
+                    if(y1 >y2){
+                        i = x1;
+                        x1 = x2;
+					    x2 = i;
+					    i = y1;
+					    y1 = y2;
+					    y2 = i;
+                    }
+                    for(i = y1; i <= y2; i+=2)
+                        dot((x1 + (i - y1) / k), i);
+                }
+            }
 	}
 
 }
