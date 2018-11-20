@@ -347,7 +347,6 @@ void move_circle(int x1, int y1, int x2, int y2, int r, int speed)
 		circle(dots[i][0], dots[i][1], 50, 1);
 		setcolor(255, 255, 255);
 		circle(dots[i+speed][0],dots[i+speed][1], 50, 1);
-		sleep(1);
 	}
 	for(i = i + speed; (i - speed) > 0; i = i - speed)
 	{
