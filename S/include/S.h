@@ -24,8 +24,13 @@ void init_set();
 void clear();
 void setcolor(unsigned char, unsigned char, unsigned char);
 void setbkcolor(unsigned char, unsigned char, unsigned char);
+int ** line(int, int, int, int);
 void dot(int, int);
-void line(int, int, int, int);
-void dot(int, int);
+void rect(int, int, int, int);
+unsigned short getcolor(int, int);
+void circle(int, int, int, int);
+void display_bmp(char *);
+void print_text(int, int, char *);
+void move_circle(int, int, int, int, int, int);
 
 #endif
